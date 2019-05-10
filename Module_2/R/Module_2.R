@@ -8,3 +8,7 @@ mean(rt_df$rt)
 rt_f_df <- subset(rt_df, rt_df$gender == "Female")
 summary(rt_f_df)
 hist(rt_f_df$rt)
+datasets <- list(rt_df,rt_f_df)
+
+# Pulling out part of list
+(datasets[[1]])$rt
